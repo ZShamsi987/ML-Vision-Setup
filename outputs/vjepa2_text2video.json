@@ -1,0 +1,67 @@
+{
+  "encoder": "openai/clip-vit-base-patch32",
+  "device": "cuda",
+  "frames_per_video": 64,
+  "num_videos": 2,
+  "video_neighbors": [
+    {
+      "video": "00000.avi",
+      "neighbors": [
+        {
+          "video": "00001.avi",
+          "score": 0.5550017356872559
+        }
+      ]
+    },
+    {
+      "video": "00001.avi",
+      "neighbors": [
+        {
+          "video": "00000.avi",
+          "score": 0.5550017356872559
+        }
+      ]
+    }
+  ],
+  "text2video": [
+    {
+      "query": "a person jumping",
+      "topk": [
+        {
+          "video": "00000.avi",
+          "score": 0.2496323436498642
+        },
+        {
+          "video": "00001.avi",
+          "score": 0.2036503404378891
+        }
+      ]
+    },
+    {
+      "query": "basketball dunk",
+      "topk": [
+        {
+          "video": "00001.avi",
+          "score": 0.26887214183807373
+        },
+        {
+          "video": "00000.avi",
+          "score": 0.24622923135757446
+        }
+      ]
+    },
+    {
+      "query": "crawling baby",
+      "topk": [
+        {
+          "video": "00000.avi",
+          "score": 0.3401692509651184
+        },
+        {
+          "video": "00001.avi",
+          "score": 0.1690937876701355
+        }
+      ]
+    }
+  ]
+}

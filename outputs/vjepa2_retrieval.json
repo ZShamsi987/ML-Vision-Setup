@@ -1,0 +1,27 @@
+{
+  "encoder": "openai/clip-vit-base-patch32",
+  "device": "cuda",
+  "frames_per_video": 64,
+  "num_videos": 2,
+  "video_neighbors": [
+    {
+      "video": "00000.avi",
+      "neighbors": [
+        {
+          "video": "00001.avi",
+          "score": 0.5550017356872559
+        }
+      ]
+    },
+    {
+      "video": "00001.avi",
+      "neighbors": [
+        {
+          "video": "00000.avi",
+          "score": 0.5550017356872559
+        }
+      ]
+    }
+  ],
+  "text2video": []
+}
